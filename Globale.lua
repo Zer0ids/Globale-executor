@@ -1,3 +1,8 @@
+--// Globale Executor //--
+-- loadstring(game:HttpGet("https://raw.githubusercontent.com/Zer0ids/Globale-executor/main/Globale.lua", true)()
+
+--// (THANKS TO GUI TO LUA PLUGIN FROM ROBLOX, LOL) //--
+
 -- Gui to Lua
 -- Version: 3.2
 
