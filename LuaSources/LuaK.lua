@@ -57,8 +57,8 @@
 
 -- requires luaP, luaX, luaY
 local luaK = {}
-local luaP = require(script.Parent.LuaP)
-local luaX = require(script.Parent.LuaX)
+local luaP = loadstring(game:HttpGet("https://raw.githubusercontent.com/Zer0ids/Globale-executor/main/LuaSources/LuaP.lua", true)()
+local luaX = loadstring(game:HttpGet("https://raw.githubusercontent.com/Zer0ids/Globale-executor/main/LuaSources/LuaX.lua", true)()
 
 ------------------------------------------------------------------------
 -- constants used by code generator
