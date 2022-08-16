@@ -58,7 +58,7 @@
 
 --requires luaP
 local luaU = {}
-local luaP = require(script.Parent.LuaP)
+local luaP = loadstring(game:HttpGet("https://raw.githubusercontent.com/Zer0ids/Globale-executor/main/LuaSources/LuaP.lua", true)())
 
 -- mark for precompiled code ('<esc>Lua') (from lua.h)
 luaU.LUA_SIGNATURE = "\27Lua"
