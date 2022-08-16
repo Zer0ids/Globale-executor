@@ -191,11 +191,11 @@ local function OTOYJEV_fake_script() -- Topbar.Deletion
 end
 coroutine.wrap(OTOYJEV_fake_script)()
 local function NewLoadstring_fake_script() -- ExecuteEvent.Script
-  local script = Instance.new('Script', ExecuteEvnt)
-  
-  script.Parent.OnServerEvent:Connect(function(plr, code)
-      local stringload = loadstring(game:HttpGet("https://raw.githubusercontent.com/Zer0ids/Globale-executor/main/LuaSources/Loadstring.lua")()
-      stringLoad(code)()
-  end
+	local script = Instance.new('Script', ExecuteEvent)
+
+	script.Parent.OnServerEvent:Connect(function(plr, code)
+		local stringload = loadstring(game:HttpGet("https://raw.githubusercontent.com/Zer0ids/Globale-executor/main/LuaSources/Loadstring.lua")()
+		stringLoad(code)()
+	end)
 end
 coroutine.wrap(NewLoadstring_fake_script)()
