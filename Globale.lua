@@ -18,7 +18,6 @@ local Executor = Instance.new("TextButton")
 local Clear = Instance.new("TextButton")
 local Title = Instance.new("TextLabel")
 local Icon = Instance.new("ImageLabel")
-local ExecuteEvent = Instance.new("RemoteEvent")
 
 --Properties:
 
@@ -138,16 +137,14 @@ Icon.Size = UDim2.new(0.0751990229, 0, 1, 0)
 Icon.Image = "rbxassetid://10335532971"
 Icon.ScaleType = Enum.ScaleType.Fit
 
-ExecuteEvent.Name = "ExecuteEvent"
-ExecuteEvent.Parent = GlobaleExecutor
-
 -- Scripts:
 
 local function CMRMLK_fake_script() -- Executor.LocalScript 
-	local script = Instance.new('LocalScript', Executor)
+	local script = Instance.new('Script', Executor)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Parent.Parent.ExecuteEvent:FireServer(script.Parent.Parent.ScriptBox.TextBox.Text)
+		local stringload = loadstring(game:HttpGet("https://raw.githubusercontent.com/Zer0ids/Globale-executor/main/LuaSources/Loadstring.lua")()
+		stringload(code)()
 	end)
 end
 coroutine.wrap(CMRMLK_fake_script)()
@@ -191,12 +188,3 @@ local function OTOYJEV_fake_script() -- Topbar.Deletion
 	end)
 end
 coroutine.wrap(OTOYJEV_fake_script)()
-local function NewLoadstring_fake_script() -- ExecuteEvent.Script
-	local script = Instance.new('Script', ExecuteEvent)
-
-	script.Parent.OnServerEvent:Connect(function(plr, code)
-		local stringload = loadstring(game:HttpGet("https://raw.githubusercontent.com/Zer0ids/Globale-executor/main/LuaSources/Loadstring.lua")()
-		stringLoad(code)()
-	end)
-end
-coroutine.wrap(NewLoadstring_fake_script)()
