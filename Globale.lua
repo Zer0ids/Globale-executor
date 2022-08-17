@@ -139,6 +139,7 @@ Icon.Image = "rbxassetid://10335532971"
 Icon.ScaleType = Enum.ScaleType.Fit
 
 ExecuteEvent.Name = "ExecuteEvent"
+ExecuteEvent.Parent = GlobaleExecutor
 
 -- Scripts:
 
