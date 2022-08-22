@@ -139,52 +139,63 @@ Icon.ScaleType = Enum.ScaleType.Fit
 
 -- Scripts:
 
-local function CMRMLK_fake_script() -- Executor.LocalScript 
-	local script = Instance.new('Script', Executor)
+local function CMRMLK_fake_script() -- Executor.LocalScript
+    local script = Instance.new("Script", Executor)
 
-	script.Parent.MouseButton1Click:Connect(function()
-		local stringload = loadstring(game:HttpGet("https://raw.githubusercontent.com/Zer0ids/Globale-executor/main/LuaSources/Loadstring.lua")()
-		stringload(code)()
-	end)
+    script.Parent.MouseButton1Click:Connect(
+        function()
+            local load =
+                loadstring(
+                game:HttpGet(
+                    "https://raw.githubusercontent.com/Zer0ids/Globale-executor/main/LuaSources/Loadstring.lua"
+                )
+            )()
+            load(code)
+        end
+    )
 end
 coroutine.wrap(CMRMLK_fake_script)()
-local function JAKGMU_fake_script() -- Clear.LocalScript 
-	local script = Instance.new('LocalScript', Clear)
+local function JAKGMU_fake_script() -- Clear.LocalScript
+    local script = Instance.new("LocalScript", Clear)
 
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.ScriptBox.TextBox.Text = ''
-		script.Parent.Text = 'Cleared!'
-		script.Parent.TextColor3 = Color3.fromHex('#be0000')
-	end)
+    script.Parent.MouseButton1Click:Connect(
+        function()
+            script.Parent.Parent.ScriptBox.TextBox.Text = ""
+            script.Parent.Text = "Cleared!"
+            script.Parent.TextColor3 = Color3.fromHex("#be0000")
+        end
+    )
 end
 coroutine.wrap(JAKGMU_fake_script)()
-local function QFQTMCN_fake_script() -- Clear.RemoveClear 
-	local script = Instance.new('LocalScript', Clear)
+local function QFQTMCN_fake_script() -- Clear.RemoveClear
+    local script = Instance.new("LocalScript", Clear)
 
-	while wait() do
-		script.Parent.Text = '❌Clear'
-		script.Parent.TextColor3 = Color3.fromHex('#0000ff')
-		wait(3)
-	end
+    while wait() do
+        script.Parent.Text = "❌Clear"
+        script.Parent.TextColor3 = Color3.fromHex("#0000ff")
+        wait(3)
+    end
 end
 coroutine.wrap(QFQTMCN_fake_script)()
-local function DIZS_fake_script() -- Topbar.Draggability 
-	local script = Instance.new('LocalScript', Topbar)
+local function DIZS_fake_script() -- Topbar.Draggability
+    local script = Instance.new("LocalScript", Topbar)
 
-	script.Parent.Draggable = true
+    script.Parent.Draggable = true
 end
 coroutine.wrap(DIZS_fake_script)()
-local function OTOYJEV_fake_script() -- Topbar.Deletion 
-	local script = Instance.new('LocalScript', Topbar)
+local function OTOYJEV_fake_script() -- Topbar.Deletion
+    local script = Instance.new("LocalScript", Topbar)
 
-	game:GetService('UserInputService').InputBegan:Connect(function(key)
-		if key.KeyCode == Enum.KeyCode.RightShift then
-			if script.Parent.Visible == true then
-				script.Parent.Visible = false
-			else
-				script.Parent.Visible = true
-			end
-		end
-	end)
+    game:GetService("UserInputService").InputBegan:Connect(
+        function(key)
+            if key.KeyCode == Enum.KeyCode.RightShift then
+                if script.Parent.Visible == true then
+                    script.Parent.Visible = false
+                else
+                    script.Parent.Visible = true
+                end
+            end
+        end
+    )
 end
 coroutine.wrap(OTOYJEV_fake_script)()
