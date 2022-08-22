@@ -16,7 +16,8 @@ I don't really know... I know the fact that it can't use, **"LocalPlayer"** and 
 
 ## Other Info
 [Here](https://www.roblox.com/users/3176005468/profile) is my **Roblox** account...
-[Here](https://goonlinetools.com/lua-beautifier/) is where I reformatted the source codes...
+
+[Here](https://goonlinetools.com/lua-beautifier/) is where I **reformatted** the source codes...
 
 Here are the ***scripts*** that I have so far (that are public):
 * [Try to Die UI](https://rscripts.net/script/Try-to-Die-Script-Script-or-Auto-Win,-Skip-Level-&-MORE-2798)
