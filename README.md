@@ -1,4 +1,7 @@
 # Globale Executor
+### NOTICE
+**This script has been broken! We'll try to fix the inconvenience!**
+
 ### What is Globale?
 Globale is a well-known server-sided executor that has been worked on for a long time until now, there is finally a server-sided executor!
 
