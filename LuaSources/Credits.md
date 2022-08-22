@@ -1,3 +1,5 @@
+# Credits. technically...
+
 LuLu 5.1 VM (original implementation) - http://lulu.luaforge.net/
 * Rerubu (rewrite based off LuLu) - https://github.com/Rerumu/Rerubi
 
